@@ -1,6 +1,6 @@
 # Instant Resume
 
-Instant Resume enables channels to save their current state upon exit and then continue playback upon relaunch. This improves the user experience by letting viewers quickly get back to the content they were watching without having to find it first. This sample demonstrates how to implement Instant Resume in a channel. It takes the completed [SceneGraph master sample channel](https://github.com/rokudev/scenegraph-master-sample), and does the following:
+Instant Resume enables Roku Scenegraph channel to save its current state upon exit and then continue playback upon next launch. This improves the user experience by letting users quickly get back to the content they were watching before. This example code demonstrates how to implement Instant Resume in a roku channel. It takes the completed [SceneGraph master sample channel](https://github.com/rokudev/scenegraph-master-sample), and does the following:
 
 1. Updates the channel manifest with required attributes.
 
@@ -10,7 +10,7 @@ Instant Resume enables channels to save their current state upon exit and then c
 
 ## Channel manifest
 
-The last part of the channel manifest (lines 12 and 13) declare the `sdk_instant_resume=1` and `run_as_process=1` attributes. 
+Channel manifest declare the `sdk_instant_resume=1` and `run_as_process=1` attributes. 
 
 - **sdk_instant_resume=1**. Acknowledges that the channel has implemented all the requirements and protocols for the Instant Resume integration.
 
